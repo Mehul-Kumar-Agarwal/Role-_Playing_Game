@@ -164,7 +164,7 @@ class Person:
         magic_dmg = spell.generate_Dmg()
         percent=self.hp/self.max_hp*100
 
-        if self.mp < spell.cost or spell.type=="White" and pct>50 :
+        if self.mp < spell.cost or spell.type=="White" and percent>50 :
             self.choose_Enemy_Spell()
         else:
             return spell,magic_dmg
